@@ -1,0 +1,27 @@
+>>> x = 0
+>>> import random
+>>> secret = random.randint(1, 10)
+>>> while True:
+...     guess = int(input('Whats The Secret Number?'))
+...     if guess == secret:
+...         print('You Won!')
+...         print('It Took You' + str(x) + 'Attempts!')
+...         break
+...     elif guess > secret:
+...         print('Too High!')
+...         x = int(x + 1)
+...     elif guess < secret:
+...         print('Too Low!')
+...         x = int(x + 1)
+...
+Output:
+
+Whats The Secret Number? 2
+Too Low!
+Whats The Secret Number? 9
+Too High!
+Whats The Secret Number? 5
+You Won!
+It Took You2Attempts!
+
+# sry that you 2 and attempts are fused together :/ should've put spaces
